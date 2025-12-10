@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="37" failures="17" errors="0" time="0.259">
-  <testsuite name="tests/films.spec.js" errors="0" failures="17" skipped="0" timestamp="2025-12-10T09:50:54" time="0.163" tests="37">
+<testsuites name="jest tests" tests="37" failures="12" errors="0" time="0.256">
+  <testsuite name="tests/films.spec.js" errors="0" failures="12" skipped="0" timestamp="2025-12-10T10:03:47" time="0.158" tests="37">
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.001">
     </testcase>
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should return an array" time="0">
@@ -21,120 +21,27 @@
     </testcase>
     <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should return a number" time="0">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be different from NaN" time="0.001">
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be different from NaN" time="0">
     </testcase>
     <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name=" should return the average score of movies selecting only the director films. With 2 decimals! " time="0">
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return an array" time="0.001">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: &quot;object&quot;
-Received: &quot;undefined&quot;
-    at Object.toBe (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/tests/films.spec.js:152:44)
-    at Promise.then.completed (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at _runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return an array" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0.006">
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should only return the title of the movies, each value should be a string" time="0">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
-    at Object.&lt;anonymous&gt; (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/tests/films.spec.js:162:58)
-    at Promise.then.completed (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at _runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return all of items when the array passed has fewer than 20 items" time="0">
-      <failure>Error: expect(received).toHaveLength(expected)
-
-Matcher error: received value must have a length property whose value must be a number
-
-Received has value: undefined
-    at Object.toHaveLength (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/tests/films.spec.js:167:44)
-    at Promise.then.completed (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at _runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should order them alphabetically." time="0">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: [&quot;aaa&quot;, &quot;aab&quot;, &quot;abb&quot;, &quot;abc&quot;, &quot;acb&quot;]
-Received: undefined
-    at Object.toEqual (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/tests/films.spec.js:179:44)
-    at Promise.then.completed (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at _runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return the top 20 after ordering them alphabetically." time="0">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: [&quot;aaa&quot;, &quot;aab&quot;, &quot;acb&quot;, &quot;acs&quot;, &quot;afb&quot;, &quot;agb&quot;, &quot;anc&quot;, &quot;apo&quot;, &quot;bab&quot;, &quot;bbb&quot;, …]
-Received: undefined
-    at Object.toEqual (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/tests/films.spec.js:228:44)
-    at Promise.then.completed (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at _runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should return an array" time="0">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return an array" time="0.001">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: &quot;object&quot;
@@ -220,7 +127,7 @@ Received: undefined
     at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="ADD YOUR CODE IN films.spec.js file" time="0.001">
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="ADD YOUR CODE IN films.spec.js file" time="0">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: &quot;coffee&quot;
