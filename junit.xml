@@ -1,59 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="37" failures="21" errors="0" time="0.263">
-  <testsuite name="tests/films.spec.js" errors="0" failures="21" skipped="0" timestamp="2025-12-10T09:30:02" time="0.165" tests="37">
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.002">
+<testsuites name="jest tests" tests="37" failures="19" errors="0" time="0.254">
+  <testsuite name="tests/films.spec.js" errors="0" failures="19" skipped="0" timestamp="2025-12-10T09:35:12" time="0.16" tests="37">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.001">
     </testcase>
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should return an array" time="0">
     </testcase>
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array, not update the original one" time="0">
     </testcase>
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array with the same length as the original one" time="0.001">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array with the same length as the original one" time="0">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should be declared" time="0">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return an array" time="0">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: true
-Received: false
-    at Object.toBe (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/tests/films.spec.js:60:60)
-    at Promise.then.completed (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at _runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array, not update the original one" time="0">
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array, not update the original one" time="0.002">
     </testcase>
-    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array with the movies from director" time="0.002">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: [{&quot;director&quot;: &quot;Quentin Tarantino&quot;, &quot;duration&quot;: &quot;2h 45min&quot;, &quot;genre&quot;: [&quot;Drama&quot;, &quot;Western&quot;], &quot;score&quot;: 8.4, &quot;title&quot;: &quot;Django Unchained&quot;, &quot;year&quot;: 2012}]
-Received: undefined
-    at Object.toEqual (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/tests/films.spec.js:86:65)
-    at Promise.then.completed (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at _runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array with the movies from director" time="0">
     </testcase>
     <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be declared" time="0">
     </testcase>
@@ -187,7 +149,7 @@ Received: undefined
     at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return the top 20 after ordering them alphabetically." time="0">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return the top 20 after ordering them alphabetically." time="0.001">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: [&quot;aaa&quot;, &quot;aab&quot;, &quot;acb&quot;, &quot;acs&quot;, &quot;afb&quot;, &quot;agb&quot;, &quot;anc&quot;, &quot;apo&quot;, &quot;bab&quot;, &quot;bbb&quot;, …]
@@ -254,7 +216,7 @@ Received: undefined
     at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should return the new array in ascending order" time="0.001">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return the new array in ascending order" time="0">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: [{&quot;year&quot;: 1982}, {&quot;year&quot;: 1995}, {&quot;year&quot;: 2002}]
@@ -275,7 +237,7 @@ Received: undefined
     at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should order movies with the same year by their title, alphabetically" time="0">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should order movies with the same year by their title, alphabetically" time="0.001">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: [{&quot;title&quot;: &quot;aab&quot;, &quot;year&quot;: 1982}, {&quot;title&quot;: &quot;bac&quot;, &quot;year&quot;: 1982}, {&quot;title&quot;: &quot;abc&quot;, &quot;year&quot;: 2002}]
@@ -437,7 +399,7 @@ Received: false
     at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return a new array, not update the original one" time="0">
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return a new array, not update the original one" time="0.001">
     </testcase>
     <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return the best film of a year, searching in an array" time="0">
       <failure>Error: expect(received).toEqual(expected) // deep equality
