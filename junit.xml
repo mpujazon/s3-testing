@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="39" failures="9" errors="0" time="0.258">
-  <testsuite name="tests/films.spec.js" errors="0" failures="9" skipped="0" timestamp="2025-12-10T10:26:49" time="0.18" tests="39">
+<testsuites name="jest tests" tests="39" failures="7" errors="0" time="0.224">
+  <testsuite name="tests/films.spec.js" errors="0" failures="7" skipped="0" timestamp="2025-12-10T21:04:08" time="0.124" tests="39">
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.001">
     </testcase>
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should return an array" time="0">
     </testcase>
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array, not update the original one" time="0.001">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array, not update the original one" time="0">
     </testcase>
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array with the same length as the original one" time="0">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return an array" time="0">
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return an array" time="0.001">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return a new array, not update the original one" time="0">
     </testcase>
@@ -19,7 +19,7 @@
     </testcase>
     <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should return a number" time="0.001">
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should return a number" time="0">
     </testcase>
     <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be different from NaN" time="0">
     </testcase>
@@ -29,7 +29,7 @@
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return an array" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0.005">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0.006">
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should only return the title of the movies, each value should be a string" time="0">
     </testcase>
@@ -41,7 +41,7 @@
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should return an array" time="0.001">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return an array" time="0">
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should return a new array" time="0">
     </testcase>
@@ -49,51 +49,13 @@
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should return the new array in ascending order" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should order movies with the same year by their title, alphabetically" time="0">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should order movies with the same year by their title, alphabetically" time="0.001">
     </testcase>
     <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return a number" time="0.001">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: &quot;number&quot;
-Received: &quot;string&quot;
-    at Object.toBe (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/tests/films.spec.js:299:60)
-    at Promise.then.completed (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at _runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return a number" time="0">
     </testcase>
     <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return the average score of movies selecting only the genre" time="0">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: 8.77
-Received: &quot;HI&quot;
-    at Object.toBe (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/tests/films.spec.js:327:22)
-    at Promise.then.completed (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at _runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should be declared" time="0">
     </testcase>
@@ -120,7 +82,7 @@ Received: false
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return a new array, not update the original one" time="0">
     </testcase>
-    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with duration as a number" time="0.001">
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with duration as a number" time="0">
       <failure>TypeError: Cannot read properties of undefined (reading &apos;0&apos;)
     at Object.&lt;anonymous&gt; (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/tests/films.spec.js:346:41)
     at Promise.then.completed (/Users/mpujazon/Documents/Development Projects/IT Academy/Sprint 3/s3-testing/node_modules/jest-circus/build/utils.js:298:28)

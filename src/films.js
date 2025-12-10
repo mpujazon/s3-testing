@@ -20,7 +20,11 @@ const orderAlphabetically = (array) => array.map(movie => movie.title).sort((a, 
 const orderByYear = (array) => [...array].sort((a,b)=> a.year - b.year || (a.title).localeCompare(b.title));
 
 // Exercise 6: Calculate the average of the movies in a category
-const moviesAverageByCategory = (array, category) => "HI";
+const moviesAverageByCategory = (array, category) => {
+  const moviesByCategory = array.filter(movie => movie.genre.includes(category));
+  const scoreAverage = moviesByCategory.reduce((acc, movie)=>acc+movie.score, 0)/moviesByCategory.length;
+  return Math.round(scoreAverage * 100) / 100;
+}
 
 // Exercise 7: Modify the duration of movies to minutes
 function hoursToMinutes() {
