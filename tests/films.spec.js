@@ -291,11 +291,41 @@ describe('Function "orderByYear"', () => {
 });
 
 // Exercise 6
-// YOUR CODE HERE. Test moviesAverageByCategory()
 describe('Function "moviesAverageByCategory"', () => {
-  it('ADD YOUR CODE IN films.spec.js file', () => {
-    expect(typeof hoursToMinutes).toBe('coffee');
+  it('should be declared', () => {
+    expect(typeof moviesAverageByCategory).toBe('function');
   });
+  it('should return a number', ()=>{
+    expect(typeof moviesAverageByCategory(movies,'Crime')).toBe('number');
+  });
+  it('should return the average score of movies selecting only the genre', () => {
+    expect(moviesAverageByCategory([
+      {
+    title: 'Star Wars: Episode V - The Empire Strikes Back',
+    year: 1980,
+    director: 'Irvin Kershner',
+    duration: '2h 4min',
+    genre: ['Action', 'Adventure', 'Fantasy', 'Sci-Fi'],
+    score: 8.8
+    },
+    {
+      title: 'Inception',
+      year: 2010,
+      director: 'Christopher Nolan',
+      duration: '2h 28min',
+      genre: ['Action', 'Adventure', 'Sci-Fi', 'Thriller'],
+      score: 8.8
+    },
+    {
+      title: 'The Lord of the Rings: The Two Towers',
+      year: 2002,
+      director: 'Peter Jackson',
+      duration: '2h 59min',
+      genre: ['Adventure', 'Drama', 'Fantasy'],
+      score: 8.7
+    }
+    ], 'Adventure')).toBe(8.77);
+  })
 });
 
 // Exercise 7
