@@ -35,7 +35,7 @@ s3-testing/
 ## 🛠️ Installation
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/mpujazon/s3-testing
 cd s3-testing
 npm install
 ```
