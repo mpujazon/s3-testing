@@ -1,86 +1,73 @@
-# Sprint 3 IT Academy | Video management tool
+# Sprint 3 - Movie Data Testing
 
-## Introduction
+## 📄 Description
 
-A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have, since the process is currently done manually.
+Small JavaScript utility library to work with a dataset of 200+ movies. It offers pure functions to filter, sort, average scores, and convert durations, plus a Jest test suite that validates each exercise.
 
-You will be in charge of setting up the core of the application: all the logic of filtering and sorting of movies. You have 2 weeks to finish, which is how long this sprint lasts.
-
-<br>
-
-## Requirements
+![Tests passed](/src/assets/demo-tests.webp "Tests passed")
 
 
-1. Clone this repo
+## 📁 Project Structure
+
+```
+s3-testing/
+├── src/
+│   ├── data.js          # Movie dataset
+│   └── films.js         # Transformation and calculation helpers
+├── tests/
+│   └── films.spec.js    # Unit tests with Jest
+├── index.html
+├── package.json
+└── test-results.html    # HTML report from Jest
+```
+
+## 💻 Technologies
+
+- JavaScript (ES6+)
+- Node.js and npm
+- Jest 29.x (tests, JUnit and HTML reporters)
+
+## 📋 Requirements
+
+- Node.js 16+ and npm
+- Terminal with zsh or bash
+
+## 🛠️ Installation
+
 ```bash
-$ git clone https://github.com/IT-Academy-BCN/starter-code-frontend-sprint-3-movies
+git clone <repo-url>
+cd s3-testing
+npm install
 ```
 
-2. Unlink your repo from the itacademy repository
-```bash
-$ git remote rm origin
-```
+## ▶️ Run
 
-3. Link your repo to the repository you have to create in your github account
-```bash
-$ git remote add origin <your repo name!>
-```
+- Run all tests: `npm test`
+- Watch mode: `npm run test:watch`
+- Reports are generated automatically in `junit.xml` and `test-results.html`
 
-<br>
+## ✨ Features
 
-## Submission
+- List all directors (`getAllDirectors`)
+- Filter movies by director and compute their average score (`getMoviesFromDirector`, `moviesAverageOfDirector`)
+- Sort titles alphabetically and limit to the first 20 (`orderAlphabetically`)
+- Sort movies by year with title tiebreak (`orderByYear`)
+- Average scores by genre with two decimals (`moviesAverageByCategory`)
+- Convert durations like `2h 22min` to total minutes (`hoursToMinutes`)
+- Get the best movie of a given year (`bestFilmOfYear`)
 
-1. Upon completion, run the following commands:
+## 🧠 Learnings
 
-```bash
-$ git add .
-$ git commit -m "Sprint Solution"
-$ git push origin master
-```
+- Pure, non-mutating array utilities
+- Unit testing with Jest, assertions, and JUnit/HTML reporters
+- Handling large datasets with array methods (`map`, `filter`, `reduce`, `sort`)
+- Data conversion and normalization (hours and minutes to numeric format)
 
-2. Create Pull Request.
+## 🤝 Contributions
 
-3. Upload the link to the virtual campus so that your mentor can correct it and give you feedback.
-
-
-
-<br>
-
-## Introduction
-
-The statement of the exercise is available on the virtual campus.
-
-<br>
-
-## Tests!
-
-
-```shell
-$ npm install
-$ npm run test:watch
-```
-
-And last, open the generated `test-results.html` file with the "Live Server" VSCode extension to see test results.
-
-Apart from the statement, you will know exactly what you are asked to do by looking at the file `tests/films.spec.js`, all tests are already defined here!
-
-<br>
-
-## Instructions
-
-You have the following indications from the frontend responsible:
-
-- It is mandatory to implement all loops in ES6 (using map, reduce, filter and sort to manipulate arrays).
-
-- As at the moment we don't consume data from a server using an API, we will work with data from the src/data.js archive. For the moment we will implement the logic using
-an array of information about 250 movies.
-
-- The implementation is about processing this array of movies, to display it as requested in each exercise.
-
-- The logic to implement will be placed in the src/films.js file.
-
-- You don't need to show the result of each function on the screen. Your goal is to pass the tests.  More information on how to program oriented to pass tests at the end of the document.
-
-- Don't forget to include the capture of the test results in the virtual campus.
-
-
+1. Fork the repository
+2. Create a branch: `git checkout -b feature/my-improvement`
+3. Apply changes and add tests when relevant
+4. Write descriptive commits: `git commit -m "feat: describe the improvement"`
+5. Push the branch: `git push origin feature/my-improvement`
+6. Open a pull request
